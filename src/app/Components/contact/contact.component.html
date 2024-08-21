@@ -1,0 +1,30 @@
+<section class="vh-90 justify-content-center align-items-center d-flex flex-column">
+    <div class=" main-color pt-3">
+        <h1 class="text-uppercase d-flex justify-content-center align-items-center">Contact Section</h1>
+        <div class="star d-flex justify-content-center align-items-center">
+            <div class="line main-color"> </div>
+            <i class="fa-solid fa-star mx-2 main-color"></i>
+            <div class="line main-color"> </div>
+        </div>
+        
+    </div>
+    <form action="" class="w-50 mx-auto">
+        <!-- username -->
+         <label for="userName" class="text-sec my-2 position-relative top-0"
+         [class.top-40]="!userName.length">UserName :</label>
+         <input type="text" placeholder="userName" name="userName" id="userName" [(ngModel)]="userName" class="form-control shadow-none border-top-0 border-start-0 border-end-0  position-relative my-2">
+        <!-- userage -->
+         <label for="userAge" class="text-sec my-2 position-relative top-0"
+         [class.top-40]="!userAge.length">userAge :</label>
+         <input type="text" placeholder="userAge" name="userAge" id="userAge" [(ngModel)]="userAge" class="form-control shadow-none border-top-0 border-start-0 border-end-0  position-relative my-2">
+        <!-- useremail -->
+         <label for="userEmail" class="text-sec my-2 position-relative top-0"
+         [class.top-40]="!userEmail.length">userEmail :</label>
+         <input type="text" placeholder="userEmail" name="userEmail" id="userEmail" [(ngModel)]="userEmail" class="form-control shadow-none border-top-0 border-start-0 border-end-0  position-relative my-2">
+        <!-- userPassword -->
+         <label for="userPassword" class="text-sec my-2 position-relative top-0"
+         [class.top-40]="!userPassword.length">userPassword :</label>
+         <input type="text" placeholder="userPassword" name="userPassword" id="userPassword" [(ngModel)]="userPassword" class="form-control shadow-none border-top-0 border-start-0 border-end-0  position-relative my-2">
+    </form>
+    <button class="btn-main mt-3    ">Submit</button>
+</section>
